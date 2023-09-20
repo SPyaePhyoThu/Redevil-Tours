@@ -13,6 +13,7 @@ const HeaderPage = () => {
   const [displayMenu, setDisplayMenu] = useState(false);
   const displayMenuHandler = () => {
     setDisplayMenu(true);
+    console.log("ok");
   };
   const hideMenuHandler = () => {
     setDisplayMenu(false);
