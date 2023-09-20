@@ -1,7 +1,7 @@
 .menu{
     height: 100%;
     display : grid;
-    grid-template-columns: 5rem 1fr 1fr 1fr ;
+    grid-template-columns: 5rem 0.8fr 0.8fr 1fr ;
     justify-items: center;
 }
 
