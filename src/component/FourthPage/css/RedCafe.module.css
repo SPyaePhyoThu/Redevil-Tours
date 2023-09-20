@@ -1,0 +1,13 @@
+.redCafe{
+    height: 100dvh;
+    display: grid;
+    justify-items: center;
+    color: var(--color--Red);
+    font-size: 1.8rem;
+    
+}
+@media (max-width : 900px) {
+    .redCafe{
+        height: 85vh;
+}       
+}

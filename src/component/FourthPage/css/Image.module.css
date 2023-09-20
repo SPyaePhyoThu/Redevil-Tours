@@ -1,0 +1,24 @@
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.img1 , .img2{
+    background-size: cover;
+    height: 12rem;
+    width: 18rem;
+    margin-bottom: 3rem;
+    border-radius: 3px;
+    border : 3px solid var(--color--White);
+    color : var(--color--White)
+}
+
+.img1 {
+    background-image: url(../../../img/RedCafe2.jpg);
+}
+.img2 {
+    background-image: url(../../../img/RedCafe1.jpg);
+}
+
+
+

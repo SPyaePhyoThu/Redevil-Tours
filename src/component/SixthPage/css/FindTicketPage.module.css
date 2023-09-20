@@ -1,0 +1,99 @@
+.page{
+    height: 90dvh;
+}
+.mainHeading{
+    background-color: var(--color--White);
+    border: 5px solid var(--color--Red);
+    border-radius: 5px;
+    color: var(--color--Red);
+    text-align: center;
+    font-size: 3rem;
+    position: fixed;
+    width: 100%;
+
+}
+.container{
+    height: 80dvh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.findTicket{
+    height: 20rem;
+    width: 50rem;
+    padding: 1rem;
+    background-color: var(--color--Red);
+    color: var(--color--White);
+    justify-self: center ;
+    align-self: center;
+   border-radius: 5px;
+   display: grid;
+   grid-template-rows:4em 1fr ;
+}
+.heading{
+    font-size: 3rem;
+    }
+.form{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr) repeat(2, min-content);
+    grid-column-gap: 1rem;
+}
+
+.label{
+    display: block;
+    font-size: 2rem; 
+    font-weight: 500;
+    padding : 0.5rem 0;
+}
+.select{
+    color: var(--color--Red);
+    width: 100%;
+    outline: none;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.dateInput{
+    outline: none;
+    border: none;
+    width: 15rem;
+    padding: 0.8rem 0;
+    padding-left: 1.5rem;
+    border-radius: 5px; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color--Red);
+}
+.input{
+    outline: none;
+    border: none;
+    width: 9rem;
+   padding: 1rem;
+    border-radius: 5px; 
+    color: var(--color--Red);
+}
+.btn{
+    justify-self: start;
+    align-self: center;
+    border-radius: 5px;
+}
+.link{
+    text-decoration: none;
+    color: var(--color--Red);
+}
+@media (max-width : 1200px) {
+    .select{
+        padding: 1rem 0;
+        padding-left: 01;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+}
+@media (max-width : 700px) {
+    .page{
+        height: 65vh;
+
+    }
+}

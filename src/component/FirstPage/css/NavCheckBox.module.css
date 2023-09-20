@@ -1,0 +1,39 @@
+.icon{
+    position: relative;
+    margin-top: 1.8rem;
+   
+    &,
+    &::before,
+    &::after{
+        height: 2.5px;
+        width: 2.8rem;
+        background-color: var(--color--Red);
+        display: inline-block;
+    }
+
+    &::before,
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+
+    &::before{
+        top: -.9rem; 
+    }
+
+    &::after{
+        top: .9rem;
+    }
+}
+
+
+.menu{
+    height: 7rem;
+    width: 7rem;
+    z-index: 2000;
+   
+    text-align: center;
+    cursor: pointer;
+}
+

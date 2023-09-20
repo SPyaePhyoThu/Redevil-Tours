@@ -1,0 +1,132 @@
+.container {
+    height: 90%;
+    width:  75%;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -42%);
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: repeat(4 ,1fr);
+    grid-gap: 0.5rem;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+}
+@media (max-width : 750px) {
+    .container {
+        height: 80%;
+       width: 100%;
+    } 
+}
+
+.slideImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: top;
+    border-radius: 3px;
+    &:hover{
+        transform: scale(1.1);
+    }
+    transition: all 0.5s;
+}
+
+.slideList1{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.slideList2{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.slideList3{
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+.slideList4{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+.slideList5{
+    grid-row: 1/2;
+    grid-column: 5/6;
+}
+.slideList6{
+    grid-row: 1/2;
+    grid-column: 6/7;
+}
+.slideList7{
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+.slideList8{
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+.slideList9{
+    grid-row: 3/4;
+    grid-column: 5/6;
+}
+.slideList10{
+    grid-row: 4/5;
+    grid-column: 5/6;
+}
+.slideList11{
+    grid-row: 3/4;
+    grid-column: 6/7;
+}
+.slideList12{
+    grid-row: 4/5;
+    grid-column: 6/7;
+}
+
+.slideList13,
+.slideList14,
+.slideList15,
+.slideList16,
+.slideList17,
+.slideList18,
+.slideList19,
+.slideList20,
+.slideList21,
+.slideList22,
+.slideList23,
+.slideList24{
+    grid-row: 1/4;
+    grid-column: 1/5;
+}
+
+.slideList{
+    border: 1px solid greenyellow;
+}
+.slideList:target {
+    z-index: 3;
+    animation: slide 1s 1;
+}
+  
+.slideList:not(:target) {
+    animation: hidden 1s 1;
+}
+
+@keyframes slide {
+    0% {
+      transform: translatex(-100%);
+    }
+    80%{
+        transform: scale(1.2);
+       filter: blur(4px);
+    }
+    100% {
+      transform: translatex(0%);
+    }
+  }
+  
+  @keyframes hidden {
+    0% {
+      z-index: 2;
+    }
+    100% {
+      z-index: 2;
+    }
+  }

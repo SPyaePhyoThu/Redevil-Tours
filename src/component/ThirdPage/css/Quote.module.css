@@ -1,0 +1,64 @@
+.quote{
+    background-color: var(--color--Red);
+    height: 45rem ;
+    width: 30rem;
+    border-radius: .5rem;
+    
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content ;
+    justify-self: center;
+
+    align-self: center;
+}
+@media (max-width : 750px) {
+    .quote{
+        height: 50rem ;
+        width: 28rem;
+    }
+    .image{
+        height: 15rem;
+        width: 23rem;
+         margin: 2rem 0;
+         border-radius: 5px;
+         justify-self: center;
+     }
+}
+
+.image{
+   height: 20rem;
+   width: 23rem;
+    margin: 2rem 0;
+    border-radius: 5px;
+    justify-self: center;
+}
+.dQuote{
+    font-size: 5rem;
+    justify-self: start;
+}
+
+.name{
+    justify-self: end;
+}
+
+.text{
+    color: var(--color--White);
+    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding : 2rem;
+    line-height: 2rem;
+   
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    
+}
+
+.btn{
+    padding :1.5rem 1.2rem;
+    background-color: var(--color--White);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    border: 2px solid var(--color--Red);
+    cursor: pointer;
+}

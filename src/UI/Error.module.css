@@ -1,0 +1,30 @@
+.heading{
+    color: var(--color--Red);
+    font-size: 7rem;
+    position: absolute;
+    top: 10%;
+    left: 51%;
+    text-decoration: underline;
+}
+.page{
+    height: 100dvh;
+   position: relative;
+}
+.icon{
+   height: 50rem; 
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.link{
+    text-decoration: none;
+    color: var(--color--White);
+    background-color: var(--color--Red);
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+
+    text-align: center;
+}

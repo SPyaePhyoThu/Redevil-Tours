@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  padding: 0 ;
+  margin : 0;
+  box-sizing: border-box;
+ 
+}
+html {
+  font-size: 62.5%; /*10px*/
+  overflow-x: hidden;
+}
+
+:root{
+  --color--Red: #9F0505;
+  --color--White: #FFFFFF;
+}
+
+@media (max-width : 1200px) {
+  html{
+  font-size: 50%;
+}
+@media (max-width : 700px) {
+  html{
+  font-size:37.5%;
+}}
+}

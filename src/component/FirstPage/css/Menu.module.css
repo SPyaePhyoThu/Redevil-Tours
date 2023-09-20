@@ -1,0 +1,82 @@
+.menu{
+    height: 100%;
+    display : grid;
+    grid-template-columns: 5rem 1fr 1fr 1fr ;
+    justify-items: center;
+}
+
+.menuItem{
+    list-style: none;
+    height: 100%;
+    line-height: 5rem;
+     display: grid;
+    grid-template-rows: repeat(8 3.5rem);
+    grid-row-gap: 10px;
+    justify-content:start;
+    align-content:center;
+}
+.ball{
+  animation : ballSpin infinite 3s linear;
+}
+.menuList{
+    font-size: 2rem;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    color: var(--color--Red);
+    display: grid;
+    grid-template-columns: min-content  1fr ;
+    grid-column-gap: 8px;
+    align-items: center;
+    text-decoration: none;
+}
+.text{
+  color: var(--color--Red);
+  font-size: 5rem;
+  text-align: center;
+  z-index: 1;
+}
+.fred{
+ height: 120%;
+transform: skew(-30deg , 30deg);
+position: absolute;
+top: -10%;
+}
+.fredBox{
+ height: 30rem;
+ width: 120%;
+ position: relative;
+ border: 5px solid var(--color--Red);
+ transform: skew(30deg , -30deg);
+}
+.container{
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+}
+.cross{
+  align-self: center;
+    position: relative;
+    transform: rotate(45deg);
+    &,
+    &::before{
+       
+        height: 0.3rem;
+        width : 2rem;
+        border-radius: 10px;
+        background-color: var(--color--Red);
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        transform: rotate(90deg);
+    }
+}
+@keyframes ballSpin {
+  from {
+    transform: rotate(0deg) ;
+    }
+  to {
+    transform: rotate(360deg);
+}
+}
+

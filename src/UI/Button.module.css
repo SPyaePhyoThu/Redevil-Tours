@@ -1,0 +1,18 @@
+.buttonWhite{
+    padding: 1rem;
+    border: 1px solid var(--color--Red);
+    background-color:var(--color--White);
+    color: var(--color--Red);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.buttonRed{
+    padding: 1rem;
+    width: 12rem;
+    border: 1px solid var(--color--Red);
+    background-color:var(--color--Red);
+    color: var(--color--White);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
