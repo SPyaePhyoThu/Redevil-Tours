@@ -11,7 +11,12 @@ const Container = () => {
     <div className={classes.welcome}>
       <h1 className={classes.heading}>Welcome</h1>
       <p className={classes.text}>
-        Click the following images for more information.
+        You can find the Red Café on Level 3 of the Sir Alex Ferguson stand,
+        opposite the entrance to the Museum & Stadium Tour Enjoy delicious
+        meals, tasty snacks and refreshing drinks from our extensive menu in the
+        Red Café. <br /> From breakfast options to start your day with us,
+        through to cakes and puddings to round off a great day out, there's sure
+        to be something for everyone, even the fussy ones!
       </p>
     </div>
   );
@@ -29,10 +34,9 @@ const Container = () => {
   return (
     <div className={classes.container}>
       <div className={classes.details}>
-        {" "}
+        <Image onChoose={chooseHandler} />
         <AnimatePresence>{content}</AnimatePresence>
       </div>
-      <Image onChoose={chooseHandler} />
     </div>
   );
 };

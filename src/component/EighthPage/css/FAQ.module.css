@@ -55,6 +55,7 @@
 }
 .questionList{
     list-style: none;
+    cursor: pointer;
 }
 
 .question{
@@ -75,6 +76,7 @@
 }
 .answer{
     border-top: 1px solid var(--color--White);
+    padding: 1rem 0;
 }
 @media (max-width : 700px) {
     .section{

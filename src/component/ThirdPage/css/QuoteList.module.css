@@ -1,6 +1,6 @@
 .quoteList{
     list-style: none;
-    padding: 3rem;
+    padding: 5rem;
     display: grid;
    
     grid-template-rows: repeat(5 , 1fr);
@@ -9,7 +9,7 @@
 
 .container{
     height: 87vh;
-    width: 80%;
+    width: 75%;
     overflow-y: scroll;
     overflow-x: hidden;
     margin : auto 0;

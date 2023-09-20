@@ -24,7 +24,7 @@
     width: 12rem;
     border-radius: 10px;
     position: relative;
-    z-index: 10;
+  
     top: 20%;
     left: 25%;
 }
@@ -36,9 +36,10 @@
   background-color: var(--color--Red);
   
   position: absolute;
-  top: 10px;
-  left: -10px;
+  top: 0.5rem;
+  left: -1.3rem;
   z-index: -1;
+  transform: skew(10deg);
 
 }
 @media (max-width : 800px) {
@@ -52,14 +53,14 @@
 .heading{
     font-family:'Katibeh';
     position: absolute;
-    left: 0;
+    left: -5%;
     top: 30%;
-
+    display: inline;
 }
 .arrow{
-    font-size: 5rem;
+    font-size: 5.5rem;
     position: absolute;
-    left: 25%;
+    left: 20%;
     top: 50%;
 }
 .whistle{
@@ -67,8 +68,12 @@
  top: 20%;
  left: 55%;
  transform: translate(-50% , -50%);
- width :15rem;
- height :15rem
+ width :18rem;
+ height :18rem;
+ cursor: pointer;
+ padding: 3rem;
+ border: 5px solid var(--color--Red);
+ border-radius: 50%;
 }
 
 .link{

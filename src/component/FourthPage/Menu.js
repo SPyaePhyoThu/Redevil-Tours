@@ -64,7 +64,7 @@ const Menu = () => {
       </h1>
       <div className={classes.catogory}>
         {menu.map((item) => (
-          <div className={classes.each}>
+          <div key={item.name} className={classes.each}>
             <p className={classes.title}>{item.title}</p>
             <div>
               {item.food.map((f) => (

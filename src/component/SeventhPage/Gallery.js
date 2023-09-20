@@ -5,7 +5,7 @@ import SecondAlbum from "./SecondAlbum";
 import ThirdAlbum from "./ThirdAlbum";
 
 const Gallery = () => {
-  const [page, setPage] = useState(3);
+  const [page, setPage] = useState(1);
 
   const nextHandler = () => {
     if (page === 3) {
@@ -33,25 +33,25 @@ const Gallery = () => {
 
   return (
     <div id="Albums" className={classes.gallery}>
-      <div
+      <p
         onClick={prevHandler}
-        className={classes.btn}
+        className={classes.btn1}
         style={{ color: color }}
       >
-        &laquo;
-      </div>
+        &#10148;
+      </p>
       <div className={classes.album}>
         {page === 1 && <FirstAlbum />}
         {page === 2 && <SecondAlbum />}
         {page === 3 && <ThirdAlbum />}
       </div>
-      <div
+      <p
         onClick={nextHandler}
-        className={classes.btn}
+        className={classes.btn2}
         style={{ color: color }}
       >
-        &raquo;
-      </div>
+        &#10148;
+      </p>
     </div>
   );
 };

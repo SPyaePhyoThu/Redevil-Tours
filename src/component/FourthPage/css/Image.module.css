@@ -1,23 +1,51 @@
 .images{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    /* display: grid;
+    grid-template-rows: repeat(2 ,25rem);
+    align-content: center;
+    align-items: center;
+  */
+    position: relative;
+    /* height: 100%; */
 }
 .img1 , .img2{
     background-size: cover;
-    height: 12rem;
-    width: 18rem;
-    margin-bottom: 3rem;
-    border-radius: 3px;
-    border : 3px solid var(--color--White);
-    color : var(--color--White)
+    height: 20rem;
+    width: 30rem;
+    border-radius: 10px;
+   border : 3px solid var(--color--White);
+    color : var(--color--White);
+    justify-self: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .img1 {
     background-image: url(../../../img/RedCafe2.jpg);
+    position: absolute;
+    top: 7%;
+    left: 10%;
 }
 .img2 {
     background-image: url(../../../img/RedCafe1.jpg);
+    position: absolute;
+    top: 53%;
+    left: 10%;
+}
+
+.caption1 , .caption2{
+    color: var(--color--White);
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: var(--color--Red);
+    padding: 0.5rem 0;
+   text-align: center;
+    border-radius: 5px;
+    border: 2px solid var(--color--White);
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    
+    cursor: pointer;
 }
 
 

@@ -1,10 +1,10 @@
-.home{
-  height: 100dvh;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+/* .home{
+  height: 100dvh; */
+  /* display: grid;
+  grid-template-rows: min-content 1fr min-content; */
   /* padding: 1rem 0 0 2rem; */
-}
-.container{
+/* } */
+/* .container{
   display: grid;
  margin-right: 10rem ;
  position: relative;
@@ -219,4 +219,111 @@
   .icon{
     height: 20px
   }
+} */
+
+.home{
+  height: 100dvh;
+  background-color: var(--color--Red);
+
+  /* padding: 1rem 0 0 2rem; */
+}
+
+.frame{
+  height: 100%;
+  background-color: var(--color--White);
+  clip-path: polygon(0 0, 98% 8%, 95% 100%, 0% 100%);
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+}
+.nav{
+  height: 5rem;
+  text-align: right;
+ }
+
+.img{
+    height: 70%;
+    width: 80%;
+    border: 10px solid var(--color--Red);
+    border-radius: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.icon{
+  height: 35px;
+  animation: moveInTop 1.5s ease-out;
+  fill: var(--color--Red);
+}
+.box{
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.4fr min-content;
+  align-self: center;
+  justify-content: center;
+  grid-row-gap: 2rem;
+}
+.heading{
+  font-family:sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--color--Red);
+  text-transform: uppercase;
+  align-self: flex-end;
+  justify-self: center;
+}
+.heading__secondary{
+  font-family:'Katibeh';
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color--Red);
+}
+.text{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color--Red);
+}
+.btnBox{
+  display: grid;
+  justify-content: end;
+  text-decoration: none;
+
+}
+.btn{
+  align-self: end;
+  justify-self: end;
+  border-radius: 0px;
+  animation: moveInBottom 3s ease-out ;
+  margin-right: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--color--White);
+  background-color:var(--color--Red);
+  color: var(--color--White);
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.btnContainer{
+  display: grid;
+  grid-template-columns: repeat(2 , min-content);
+  justify-content: end;
+ 
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0%;
+    transform: translateY(-50rem); }
+  100% {
+    opacity: 100%;
+    transform: translateY(0); } 
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0%;
+    transform: translateY(50rem); }
+  100% {
+    opacity: 100%;
+    transform: translateY(0); } 
 }

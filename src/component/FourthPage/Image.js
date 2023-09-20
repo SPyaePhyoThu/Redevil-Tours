@@ -17,8 +17,12 @@ const Image = (props) => {
       transition={{ type: "spring" }}
       className={classes.images}
     >
-      <div onClick={clickHandler1} className={classes.img1}></div>
-      <div onClick={clickHandler2} className={classes.img2}></div>
+      <div onClick={clickHandler1} className={classes.img1}>
+        <p className={classes.caption1}>Opening Hours</p>
+      </div>
+      <div onClick={clickHandler2} className={classes.img2}>
+        <p className={classes.caption2}>Menu</p>
+      </div>
     </motion.div>
   );
 };

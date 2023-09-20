@@ -33,7 +33,7 @@ const QuoteItem = (props) => {
       variants={slideInLeftVariants}
       initial="initial"
       whileInView="animate"
-      whileHover={{ scale: 1.19 }}
+      whileHover={{ scale: 1.2 }}
       custom={props.info.id}
       className={classes.item}
       onClick={clickHandler}

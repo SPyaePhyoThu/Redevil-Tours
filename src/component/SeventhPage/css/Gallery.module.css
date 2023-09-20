@@ -6,11 +6,15 @@
     grid-template-columns: max-content 1fr max-content;
     padding: 1rem;
 }
-.btn{
-    font-size: 6rem ;
-   
+.btn1 , .btn2{
+    font-size: 5rem ;
     cursor: pointer;
     align-self: center;
+    font-weight: 100;
+    
+}
+.btn1{
+    transform: rotate(180deg);
 }
 
 .album{

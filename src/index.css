@@ -36,3 +36,6 @@ html {
   font-size:37.5%;
 }}
 }
+p , h1 , h2 , h6 , blockquote{
+  cursor: context-menu ;
+}

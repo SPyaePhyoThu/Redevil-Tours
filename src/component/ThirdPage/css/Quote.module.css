@@ -1,15 +1,13 @@
 .quote{
     background-color: var(--color--Red);
-    height: 45rem ;
+    height: 50rem ;
     width: 30rem;
     border-radius: .5rem;
-    
-
     display: grid;
     grid-template-rows: min-content 1fr min-content ;
     justify-self: center;
-
-    align-self: center;
+     align-self: center;
+     position: relative;
 }
 @media (max-width : 750px) {
     .quote{
@@ -61,4 +59,10 @@
     font-size: 1.5rem;
     border: 2px solid var(--color--Red);
     cursor: pointer;
+   border-radius: 5px;
+   text-align: center;
+   position: absolute;
+   width: 90%;
+   top: 97% ;
+   left:5%
 }

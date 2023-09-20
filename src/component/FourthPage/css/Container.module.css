@@ -4,33 +4,41 @@
     border-radius: 5px;
     background-image: url(../../../img/RedCafe.jpg) ;
     background-size: cover;
-    display: grid;
-    grid-template-rows: 1fr min-content;
+    position: relative;
 }
 .details{
     height: 90%;
     width: 90%;
-    margin : 2rem auto;
+   position: absolute;
+   top: 5%;
+   left: 5%;
     background-image: linear-gradient(to right ,rgba(255, 255, 255, 0.7) ,rgba(255, 255, 255, 0.7));
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    border-radius: 5px;
 }
 
 .welcome{
     height: 80%;
     display: grid;
     justify-items: center;
-    grid-template-rows:repeat(2, min-content);
+    grid-template-rows:0.5fr 1fr ;
     align-content: start;
     grid-row-gap: 2rem;
     padding: 5rem;
 }
 
 .heading{
-    font-size: 4rem;
+    font-size: 5rem;
    text-transform: uppercase;
 }
 .text{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'katibeh'; */
+    font-size: 1.5rem;
     font-weight: 500;
+    width: 80%;
+    text-align: center;
+    line-height: 3rem;
 }
 
 @media (max-width : 900px) {

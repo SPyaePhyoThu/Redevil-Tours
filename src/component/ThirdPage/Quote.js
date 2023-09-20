@@ -19,7 +19,7 @@ const Quote = () => {
         <span className={classes.name}>{item.name}</span>
       </blockquote>
       <motion.button
-        whileHover={{ scale: 0.95, borderRadius: 10 }}
+        whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 500 }}
         onClick={nextBtnHandler}
         className={classes.btn}
