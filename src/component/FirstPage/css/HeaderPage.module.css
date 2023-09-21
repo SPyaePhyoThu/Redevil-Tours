@@ -327,3 +327,33 @@
     opacity: 100%;
     transform: translateY(0); } 
 }
+@media (max-width : 1000px) {
+  .heading__secondary{
+   font-size: 2rem;
+  }
+}
+@media (max-width : 800px) {
+  .heading__secondary{
+   font-size: 1.8rem;
+  }
+  .img{
+    height: 50%;
+    width: 80%;
+    border: 10px solid var(--color--Red);
+    border-radius: 5px;
+    justify-self: start;
+    align-self: center;
+}
+}
+@media (max-width : 600px) {
+
+  .home{
+    height: 80dvh;
+  }
+  .heading{
+    font-size: 4rem;
+  }
+  .icon{
+    height: 22px;
+  }
+}

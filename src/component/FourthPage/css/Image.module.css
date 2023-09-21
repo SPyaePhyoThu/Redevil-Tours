@@ -48,5 +48,34 @@
     cursor: pointer;
 }
 
-
+@media (max-width : 900px) {
+   
+    .img1 , .img2{
+        height: 15rem;
+        width: 23rem;
+      }
+     
+    .img2 {
+        top: 50%;
+      
+    }
+    
+}
+@media (max-width : 600px) {
+   
+    .img1 , .img2{
+        height: 10rem;
+        width: 18rem;
+      }
+     
+    .img1 {
+        top: 10rem;
+        left: 1rem;
+    }
+    .img2 {
+        top: 30rem;
+        left: 1rem;
+    }
+    
+}
 

@@ -14,14 +14,23 @@ import {
 } from "framer-motion";
 
 const About = () => {
-  const { scrollY } = useScroll();
-
-  const opactiySection = useTransform(scrollY, [0, 300, 500], [0, 0, 1]);
-
+  const fadeIn = {
+    initial: {
+      opacity: 0,
+      y: 300,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
   return (
     <AnimatePresence>
       <motion.div
-        style={{ opacity: opactiySection }}
+        variants={fadeIn}
+        initial="initial"
+        whileInView="animate"
+        transition={{ type: "spring", duration: 2 }}
         className={classes.section}
         id="About"
       >
