@@ -29,10 +29,18 @@ const FindTicketPage = () => {
             <div className={classes.typeBox}>
               <label className={classes.label}>Type</label>
               <select className={classes.select}>
-                <option value="Legend Tour">Legend Tour</option>
-                <option value="VIP Tour">VIP Tour</option>
-                <option value="Look-ins">Look-ins</option>
-                <option value="School Trip">School Trip</option>
+                <option value="Legend Tour" className={classes.option}>
+                  Legend Tour
+                </option>
+                <option value="VIP Tour" className={classes.option}>
+                  VIP Tour
+                </option>
+                <option value="Look-ins" className={classes.option}>
+                  Look-ins
+                </option>
+                <option value="School Trip" className={classes.option}>
+                  School Trip
+                </option>
               </select>
             </div>
             <div>
@@ -55,6 +63,7 @@ const FindTicketPage = () => {
                 className={classes.input}
                 type="number"
                 required
+                min="0"
               />
             </div>
             <div>
@@ -66,6 +75,7 @@ const FindTicketPage = () => {
                 className={classes.input}
                 type="number"
                 required
+                min="0"
               />
             </div>
 

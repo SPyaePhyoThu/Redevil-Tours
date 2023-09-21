@@ -1,25 +1,30 @@
+
+
 .footer{
-    height: 35rem;
+    height: 20rem;
     background-color: var(--color--Red);
     color: var(--color--White);
     padding: 2rem;
     display: grid;
-    grid-template-rows: min-content 1fr min-content min-content;
+    grid-template-rows: min-content 1fr min-content ;
 }
 .united{
     font-size: 4rem;
     font-weight: 900;
-    text-align: center;
+   display: grid;
+   align-self: flex-start;
+   justify-self: center;
+    
 }
 
 .columnSection{
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns:  repeat(3 , 1fr);
    font-size: 1.5rem;
    font-weight: 600;
    justify-items: center;
    align-items: end;
-   line-height: 3.5rem;
+   line-height: 2.5rem;
 }
 .copyright{
     font-size: 1.3rem;

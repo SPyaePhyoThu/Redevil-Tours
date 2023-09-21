@@ -1,11 +1,11 @@
 import React from "react";
-import UnitedIcon from "../../UI/UnitedIcon";
+import OpeningTimeIcon from "../../UI/OpeningTimeIcon";
 import classes from "./css/Information.module.css";
 
 const OpeningTime = () => {
   return (
     <div className={classes.details}>
-      <UnitedIcon className={classes.icon} />
+      <OpeningTimeIcon className={classes.icon} />
       <h6 className={classes.heading}>Opening Times</h6>
       <p className={classes.textTop}>
         <span>Friday & Saturday 09::30 -17:00</span>

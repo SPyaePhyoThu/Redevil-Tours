@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./css/Information.module.css";
-import UnitedIcon from "../../UI/UnitedIcon";
+
+import PriceTag from "../../UI/PriceTag";
 
 const Price = () => {
   return (
     <div className={classes.details}>
-      <UnitedIcon className={classes.icon} />
+      <PriceTag className={classes.icon} />
       <h6 className={classes.heading}>Price: </h6>
       <p className={classes.textTop}>
         <span>Junior-from £ 15 , Adult - from £ 28</span>

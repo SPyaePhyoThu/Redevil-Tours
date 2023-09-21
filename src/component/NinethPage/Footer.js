@@ -14,29 +14,30 @@ const Footer = () => {
           <p>Phone :+44 161 676 7770</p>
           <p>Email : tour.enquiries@manutd.co.uk</p>
         </div>
+        <div className={classes.icon}>
+          <a href="https://www.facebook.com/manchesterunited/">
+            <Facebook />
+          </a>
+          <a href="https://www.instagram.com/manchesterunited/">
+            <Instagram />
+          </a>
+          <a href="https://twitter.com/ManUtd">
+            <Twitter />
+          </a>
+        </div>
         <div className={classes.secondColumn}>
           <a href="#TourTickets" className={classes.links}>
             Tours
+          </a>
+          <a href="#About" className={classes.links}>
+            About
           </a>
           <a href="#TourTickets" className={classes.links}>
             Buy Tickets
           </a>
         </div>
-        <a href="#About" className={classes.links}>
-          About
-        </a>
       </div>
-      <div className={classes.icon}>
-        <a href="https://www.facebook.com/manchesterunited/">
-          <Facebook />
-        </a>
-        <a href="https://www.instagram.com/manchesterunited/">
-          <Instagram />
-        </a>
-        <a href="https://twitter.com/ManUtd">
-          <Twitter />
-        </a>
-      </div>
+
       <p className={classes.copyright}>©2023 Redevil . All right reserved</p>
     </div>
   );
