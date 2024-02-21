@@ -11,8 +11,8 @@ const Price = () => {
       <p className={classes.textTop}>
         <span>Junior-from £ 15 , Adult - from £ 28</span>
         <span>
-          Walk up prices arre higher than Online prices, <br /> so be sure to
-          book online for the best proice
+          Walk up prices arre higher than Online prices so be sure to book
+          online for the best proice
         </span>
       </p>
     </div>
