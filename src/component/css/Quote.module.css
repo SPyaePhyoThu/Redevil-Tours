@@ -80,6 +80,7 @@
 }
 @media (max-width: 430px) {
   .quoteContainer {
+    height: 80%;
     width: 90%;
     left: 5%;
   }
