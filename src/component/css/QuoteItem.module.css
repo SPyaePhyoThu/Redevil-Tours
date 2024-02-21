@@ -1,0 +1,26 @@
+.item {
+  background-color: var(--color--Red);
+  border-radius: 5px;
+  padding: 10px;
+  height: 70px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 1rem;
+}
+
+.image {
+  height: 50px;
+  width: 60px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.text {
+  margin: 7px 0;
+  color: var(--color--White);
+  font-size: 1.3rem;
+  font-weight: 500;
+}

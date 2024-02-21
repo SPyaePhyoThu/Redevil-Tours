@@ -1,9 +1,0 @@
-.tourPage{
-    height: 100dvh;
-    width: 100%;
-}
-@media (max-width : 700px) {
-    .tourPage{
-        height: 75dvh;
-    }
-  }

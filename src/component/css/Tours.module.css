@@ -1,0 +1,94 @@
+.tours {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  color: var(--color--Red);
+  padding: 2rem 0;
+}
+.heading {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  font-family: "Neuton", serif;
+  text-align: center;
+}
+.headingSecondary {
+  padding-bottom: 2rem;
+}
+.tour {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
+  align-items: center;
+  padding-top: 5rem;
+}
+.lastTour {
+  padding-bottom: 3rem;
+}
+.paragraph {
+  font-size: 1.6rem;
+  display: grid;
+}
+.paragraph1 {
+  font-size: 1.6rem;
+  display: grid;
+  text-align: justify;
+}
+.pargraphContext {
+  padding-bottom: 3rem;
+}
+.text {
+  text-indent: 3rem;
+  font-size: 1.6rem;
+}
+.image {
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+}
+.lists {
+  padding-left: 2rem;
+}
+.button {
+  border-radius: 5px;
+  padding: 1rem;
+  width: 12rem;
+  border: none;
+  background-color: var(--color--Red);
+  color: var(--color--White);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: grid;
+  justify-self: center;
+}
+.link {
+  justify-self: center;
+}
+@media (max-width: 1025px) {
+  .tours {
+    width: 90%;
+  }
+  .tour {
+    grid-column-gap: 3rem;
+  }
+  .image {
+    height: 350px;
+    width: 100%;
+  }
+}
+@media (max-width: 770px) {
+  .tour {
+    padding-top: 3rem;
+  }
+  .headingSecondary {
+    padding-bottom: 0rem;
+  }
+}
+@media (max-width: 430px) {
+  .tours {
+    width: 96%;
+  }
+  .image {
+    height: 250px;
+  }
+}

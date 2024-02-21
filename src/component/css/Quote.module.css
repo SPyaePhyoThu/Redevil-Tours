@@ -1,0 +1,89 @@
+.quoteContainer {
+  background-color: var(--color--Red);
+  height: 70%;
+  width: 65%;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-row-gap: 2rem;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+}
+
+.image {
+  height: 20rem;
+  width: 100%;
+  border-radius: 5px;
+  justify-self: center;
+  border: 1px solid white;
+}
+.dQuote {
+  font-size: 5rem;
+  justify-self: start;
+}
+.text {
+  font-size: 1.6rem;
+  color: white;
+  display: grid;
+  align-content: end;
+  font-weight: 500;
+  padding: 0 2rem;
+}
+.name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.topSection {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 1rem;
+}
+
+.quote {
+  color: var(--color--White);
+  font-size: 1.6rem;
+  padding: 2rem;
+  line-height: 2rem;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+.paragraph {
+  text-indent: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.btn {
+  background-color: var(--color--White);
+  color: var(--color--Red);
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0.1rem;
+}
+@media (max-width: 1024px) {
+  .quoteContainer {
+    width: 70%;
+  }
+}
+@media (max-width: 770px) {
+  .quoteContainer {
+    width: 80%;
+  }
+}
+@media (max-width: 430px) {
+  .quoteContainer {
+    width: 90%;
+    left: 5%;
+  }
+  .text {
+    padding-left: 0.5rem;
+  }
+}

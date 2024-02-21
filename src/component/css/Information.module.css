@@ -1,0 +1,36 @@
+.icon,
+.aIcon,
+.pIcon {
+  height: 40px;
+  width: 55px;
+  align-self: center;
+}
+.aIcon {
+  height: 27px;
+}
+.pIcon {
+  height: 35px;
+}
+.heading {
+  font-size: 2rem;
+  color: var(--color--Red);
+}
+.textTop {
+  font-size: 1.4rem;
+  color: var(--color--Red);
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  justify-items: center;
+}
+.textBottom {
+  font-size: 1.4rem;
+  color: var(--color--Red);
+  text-align: center;
+}
+
+.details {
+  display: grid;
+  grid-template-rows: 0.5fr min-content 1fr;
+  justify-items: center;
+  grid-row-gap: 1rem;
+}

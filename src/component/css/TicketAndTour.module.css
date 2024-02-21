@@ -1,0 +1,96 @@
+.ticketAndTourPage {
+  height: 100dvh;
+  background-color: var(--color--Red);
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--color--White);
+  font-weight: 300;
+  font-family: "Neuton", serif;
+  padding: 2rem 5rem;
+  padding-bottom: 0;
+}
+.headingSecondary {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color--White);
+  padding: 0 5rem;
+
+  font-family: "Neuton", serif;
+}
+.highlight {
+  font-size: 4.5rem;
+  font-family: "Neuton", serif;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.frame {
+  background-color: var(--color--White);
+  width: 100%;
+  height: 73%;
+  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
+}
+.ticketAndTourSection {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+}
+.image {
+  height: 40rem;
+  justify-self: center;
+}
+.descriptionSection {
+  font-size: 1.6rem;
+  color: var(--color--Red);
+  display: grid;
+  align-content: center;
+}
+.paragraphHeading {
+  font-size: 3rem;
+}
+.paragraph {
+  text-indent: 3rem;
+  line-height: 3rem;
+  padding-bottom: 5rem;
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+.button {
+  border-radius: 5px;
+  padding: 1rem;
+  width: 12rem;
+  border: none;
+  background-color: var(--color--Red);
+  color: var(--color--White);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.buttonLink {
+  justify-self: end;
+}
+@media (max-width: 1025px) {
+  .ticketAndTourSection {
+    padding: 10rem 0;
+  }
+}
+@media (max-width: 770px) {
+  .ticketAndTourSection {
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 430px) {
+  .ticketAndTourPage {
+    height: 60dvh;
+  }
+  .ticketAndTourSection {
+    padding: 9rem 0;
+  }
+}

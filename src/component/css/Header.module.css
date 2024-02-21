@@ -1,0 +1,28 @@
+.header {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--color--Red);
+  display: grid;
+  justify-items: flex-end;
+}
+.header1 {
+  font-family: "Neuton", serif;
+  display: block;
+  justify-self: flex-start;
+  align-self: self-end;
+}
+.header2 {
+  font-family: "Neuton", serif;
+  display: block;
+}
+@media (max-width: 770px) {
+  .header {
+    font-size: 3rem;
+  }
+  .header1 {
+    padding-left: 10rem;
+  }
+  .header2 {
+    padding-right: 10rem;
+  }
+}

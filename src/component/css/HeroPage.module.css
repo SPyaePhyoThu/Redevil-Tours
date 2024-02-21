@@ -1,0 +1,146 @@
+.home {
+  height: 100dvh;
+  background-color: var(--color--Red);
+  font-family: "Exo", sans-serif;
+  color: var(--color--Red);
+}
+
+.frame {
+  height: 100%;
+  background-color: var(--color--White);
+  clip-path: polygon(0 0, 98% 8%, 95% 100%, 0% 100%);
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+}
+.nav {
+  height: 5rem;
+  text-align: right;
+}
+
+.img {
+  height: 70%;
+  width: 80%;
+  border: 10px solid var(--color--Red);
+  border-radius: 5px;
+  justify-self: center;
+  align-self: center;
+}
+.icon {
+  height: 35px;
+  align-self: flex-end;
+  justify-self: center;
+  animation: moveInTop 1.5s ease-out;
+  fill: var(--color--Red);
+}
+.box {
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-rows: 0.8fr min-content 0.6fr 0.4fr 1fr;
+  justify-content: center;
+  grid-row-gap: 1rem;
+}
+.heading {
+  font-family: "Neuton", serif;
+  font-size: 6rem;
+
+  color: var(--color--Red);
+  text-transform: uppercase;
+  justify-self: center;
+}
+.heading__secondary {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.text {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn {
+  align-self: start;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  animation: moveInBottom 1.5s ease-out;
+}
+.btnLink {
+  justify-self: flex-end;
+}
+.btnContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  animation: moveInBottom 1.5s ease-out;
+  grid-column-gap: 2rem;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0%;
+    transform: translateY(-50rem);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0%;
+    transform: translateY(50rem);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1025px) {
+  .heading__secondary {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 770px) {
+  .heading__secondary {
+    font-size: 1.8rem;
+  }
+  .img {
+    height: 50%;
+    width: 80%;
+    border: 10px solid var(--color--Red);
+    border-radius: 5px;
+    justify-self: start;
+    align-self: center;
+  }
+}
+@media (max-width: 430px) {
+  .home {
+    height: 100dvh;
+  }
+  .frame {
+    grid-template-columns: 1fr;
+    grid-template-rows: 12rem 55rem 1fr;
+    grid-row-gap: 5rem;
+  }
+  .img {
+    height: 100%;
+    justify-self: center;
+  }
+  .box {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.8fr min-content 0.6fr 0.4fr 1fr;
+    justify-content: center;
+    grid-row-gap: 1rem;
+  }
+  .icon {
+    align-self: center;
+  }
+  .nav {
+    padding-top: 5rem;
+
+    height: 5rem;
+    text-align: right;
+  }
+}
