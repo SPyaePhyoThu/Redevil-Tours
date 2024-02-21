@@ -93,4 +93,8 @@
   .ticketAndTourSection {
     padding: 9rem 0;
   }
+  .image {
+    height: 33rem;
+    justify-self: center;
+  }
 }

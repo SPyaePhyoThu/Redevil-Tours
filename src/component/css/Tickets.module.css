@@ -104,7 +104,7 @@
   .form,
   .ticketsConfirm {
     top: 30%;
-    left: 8%;
+    left: 5%;
   }
   .ticketSection {
     height: calc(100dvh - 120px);
