@@ -49,7 +49,7 @@ const Tours = () => {
       <div className={classes.toursContainer}>
         <div className={classes.tour}>
           <motion.img
-            variants={fadeIn}
+            variants={screenWidth > 770 ? fadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}
@@ -58,7 +58,7 @@ const Tours = () => {
             className={classes.image}
           />
           <motion.div
-            variants={leftSideFadeIn}
+            variants={screenWidth > 770 ? leftSideFadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}
@@ -101,7 +101,7 @@ const Tours = () => {
         </div>
         <div className={classes.tour}>
           <motion.div
-            variants={rightSideFadeIn}
+            variants={screenWidth > 770 ? rightSideFadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}
@@ -123,7 +123,7 @@ const Tours = () => {
             </Link>
           </motion.div>
           <motion.img
-            variants={fadeIn}
+            variants={screenWidth > 770 ? fadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}
@@ -134,7 +134,7 @@ const Tours = () => {
         </div>
         <div className={classes.tour}>
           <motion.img
-            variants={fadeIn}
+            variants={screenWidth > 770 ? fadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}
@@ -143,7 +143,7 @@ const Tours = () => {
             className={classes.image}
           />
           <motion.div
-            variants={leftSideFadeIn}
+            variants={screenWidth > 770 ? leftSideFadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}
@@ -167,7 +167,7 @@ const Tours = () => {
         </div>
         <div className={`${classes.tour} ${classes.lastTour}`}>
           <motion.div
-            variants={rightSideFadeIn}
+            variants={screenWidth > 770 ? rightSideFadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}
@@ -187,7 +187,7 @@ const Tours = () => {
             </Link>
           </motion.div>
           <motion.img
-            variants={fadeIn}
+            variants={screenWidth > 770 ? fadeIn : ""}
             initial="initial"
             whileInView="animate"
             transition={{ type: "spring", duration: 3 }}

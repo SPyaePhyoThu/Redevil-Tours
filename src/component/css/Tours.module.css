@@ -80,9 +80,6 @@
   .tour {
     padding-top: 3rem;
   }
-  .headingSecondary {
-    padding-bottom: 0rem;
-  }
 }
 @media (max-width: 430px) {
   .tours {

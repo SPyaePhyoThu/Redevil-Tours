@@ -55,5 +55,6 @@
     padding: 1rem;
     grid-gap: 0;
     height: 60dvh;
+    grid-template-rows: 9vh 1fr min-content 1fr;
   }
 }
