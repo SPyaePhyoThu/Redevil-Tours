@@ -115,10 +115,10 @@
     position: relative;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 431px) {
   .form,
   .ticketsConfirm {
     top: 30%;
-    left: 5%;
+    left: 2%;
   }
 }

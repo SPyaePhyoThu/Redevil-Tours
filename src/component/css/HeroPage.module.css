@@ -114,7 +114,7 @@
     align-self: center;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .home {
     height: 100dvh;
   }
@@ -124,13 +124,13 @@
     grid-row-gap: 5rem;
   }
   .img {
-    height: 100%;
+    height: 400px;
     justify-self: center;
   }
   .box {
     width: 100%;
     display: grid;
-    grid-template-rows: 0.8fr min-content 0.6fr 0.4fr 1fr;
+    grid-template-rows: 1fr max-content 0.4fr 0.4fr 1fr;
     justify-content: center;
     grid-row-gap: 1rem;
   }

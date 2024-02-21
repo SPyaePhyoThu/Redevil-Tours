@@ -26,6 +26,8 @@
   font-size: 1.4rem;
   color: var(--color--Red);
   text-align: center;
+  width: 80%;
+  text-align: center;
 }
 
 .details {
